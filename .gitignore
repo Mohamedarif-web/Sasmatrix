@@ -1,0 +1,94 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+staticfiles/
+
+# If you use collectstatic to a STATIC_ROOT dir, ignore it too:
+
+
+# VSCode #
+.vscode/
+
+# PyCharm #
+.idea/
+
+# Virtual Environments #
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python #
+*.py[cod]
+*$py.class
+*.so
+
+# Byte-compiled / optimized / DLL files #
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging #
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Unit test / coverage reports #
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook #
+.ipynb_checkpoints
+
+# dotenv #
+*.env
+*.env.*
+!example.env
+
+# MyPy #
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker #
+.pyre/
+
+# pytype #
+.pytype/
+
+# System files #
+.DS_Store
+Thumbs.db

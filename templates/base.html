@@ -1,0 +1,94 @@
+<html lang="en">
+{% load static %}
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASMATIX Solutions - Empowering Talent. Accelerating Business.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'asset/css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="/" class="logo">SASMATIX<span>.</span></a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li>
+                        <a class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="{% url 'services' %}">Recruitment Process</a></li>
+                            <li><a href="{% url 'services' %}">Staffing</a></li>
+                            <li><a href="{% url 'services' %}">Corporate Training</a></li>
+                            <li><a href="{% url 'course' %}"> Online Courses</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'jobs' %}">Jobs & Careers</a></li>
+                    <li><a href="{% url 'training' %}">Training</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% block content %}
+
+
+    {% endblock %}
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>SASMATIX Solutions</h3>
+                    <p>We're here to break down the process, clarify your questions, and empower you with the insight
+                        needed to move forward.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="{% url 'about' %}">About Us</a></li>
+                        <li><a href="{% url 'services' %}"></a>>Services</a></li>
+                        <li><a href="{% url 'jobs' %}"></a>>Jobs & Careers</a></li>
+                        <li><a href="{% url 'training' %}"></a>>Training</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Recruitment Process</a></li>
+                        <li><a href="#services">Staffing</a></li>
+                        <li><a href="#services">Corporate Training</a></li>
+                        <li><a href="#training">Skill Development</a></li>
+                        <li><a href="#contact">Career Counselling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Park, Tech City, India</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 12345 67890</li>
+                        <li><i class="fas fa-envelope"></i> info@sasmatix.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; Copyright 2025 - SASMATIX. All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'asset/js/main.js' %}"></script>
+</body>

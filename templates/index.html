@@ -1,0 +1,345 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+SASMATIX Solutions - Recruitment, Staffing & Training
+{% endblock %}
+{% block content %}
+
+
+<section class="hero" id="home">
+    <div class="container">
+        <h1>Empowering Talent. Accelerating Business.</h1>
+        <p>At SASMATIX solutions, we connect opportunity with talent, and transform potential into performance. Whether
+            you're hiring, staffing, or upskilling - we're your growth partner.</p>
+        <div class="hero-buttons">
+            <a href="#services" class="btn">Recruitment Process</a>
+            <a href="#services" class="btn">Staffing</a>
+            <a href="#services" class="btn">Corporate Training</a>
+        </div>
+    </div>
+</section>
+
+<!-- Client Logos -->
+<section class="clients">
+    <div class="container">
+        <div class="client-logos">
+            <div>
+                <img src="{% static 'asset/images/logo.png' %}" alt="Client 1">
+                <img src="{% static 'asset/images/cli.png' %}" alt="Client 2">
+                <img src="{% static 'asset/images/info2.png' %}" alt="Client 3">
+                <img src="{% static 'asset/images/meta.png' %}" alt="Client 4">
+                <img src="{% static 'asset/images/logo.png' %}" alt="Client 5">
+                <img src="{% static 'asset/images/cli.png' %}" alt="Client 6">
+                <img src="{% static 'asset/images/info2.png' %}" alt="Client 7">
+                <img src="{% static 'asset/images/meta.png' %}" alt="Client 8">
+                <img src="{% static 'asset/images/logo.png' %}" alt="Client 9">
+                <img src="{% static 'asset/images/cli.png' %}" alt="Client 10">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>About Us</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>We are the forward-thinking recruitment, staffing, and corporate training company
+                    committed to bridging the gap between skilled professionals and leading organizations. With a deep
+                    understanding of dynamic business needs and evolving skill landscapes, we offer customized hiring
+                    solutions and future-ready training programs.</p>
+                <p>At SASMATIX Solution, we don't just connect people to jobs — we build futures and drive business
+                    success.</p>
+            </div>
+            <div class="about-image">
+                <img src="{% static 'asset/images/abou.jpg' %}" alt="About SASMATIX">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-choose">
+    <div class="container">
+        <div class="section-title">
+            <h2>Why Choose Us</h2>
+        </div>
+        <div class="features">
+            <div class="feature-card animate-on-scroll " >
+                <i class="fas fa-shield-alt"></i>
+                <h3>Integrity First</h3>
+                <p>We operate with honesty and transparency — every engagement is built on trust.</p>
+            </div>
+            <div class="feature-card animate-on-scroll ">
+                <i class="fas fa-award"></i>
+                <h3>Driven by Excellence</h3>
+                <p>Our commitment to high-quality delivery ensures results that exceed expectations.</p>
+            </div>
+            <div class="feature-card animate-on-scroll ">
+                <i class="fas fa-users"></i>
+                <h3>Empowering People & Businesses</h3>
+                <p>We empower individuals with the right skills and organizations with the right talent.</p>
+            </div>
+            <div class="feature-card animate-on-scroll ">
+                <i class="fas fa-briefcase"></i>
+                <h3>Domain Expertise</h3>
+                <p>Our recruiters and trainers bring deep industry knowledge across IT, finance, operations, and more.
+                </p>
+            </div>
+            <div class="feature-card animate-on-scroll ">
+                <i class="fas fa-tools"></i>
+                <h3>Access to Smart Tools</h3>
+                <p>From digital assessments to online training platforms — we offer modern resources for smarter hiring
+                    and learning.</p>
+            </div>
+            <div class="feature-card animate-on-scroll ">
+                <i class="fas fa-chart-line"></i>
+                <h3>Proven Track Record</h3>
+                <p>Our client success stories speak for themselves. We've helped startups and enterprises scale with
+                    confidence.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Services</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/service1.avif' %}" alt="Recruitment Process">
+                </div>
+                <div class="service-content">
+                    <h3>Recruitment Process</h3>
+                    <p> our recruitment process is designed for precision and speed. We handle the
+                        complete hiring lifecycle – from sourcing and screening to onboarding.</p>
+                    <ul>
+                        <li>Role-based candidate sourcing</li>
+                        <li>Pre-screening and assessments</li>
+                        <li>Interview coordination</li>
+                        <li>Offer negotiation support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-card ">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/service2.avif' %}" alt="Staffing">
+                </div>
+                <div class="service-content">
+                    <h3>Staffing</h3>
+                    <p>We offer contract staffing, permanent staffing, and project-based hiring
+                        solutions. Our rapid deployment ensures skilled professionals on time.</p>
+                    <ul>
+                        <li>Contract/Temporary Staffing</li>
+                        <li>Contract-to-Hire</li>
+                        <li>Project-based Staffing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/service3.avif' %}" alt="Corporate Training">
+                </div>
+                <div class="service-content">
+                    <h3>Corporate Training</h3>
+                    <p>We help organizations bridge skill gaps through tailored corporate
+                        training programs that are practical, scalable, and aligned with real business outcomes.</p>
+                    <ul>
+                        <li>Customized Training Programs</li>
+                        <li>Hands-On Learning</li>
+                        <li>Certified Trainers</li>
+                        <li>Post-Training Assessments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Jobs Section -->
+<section class="jobs" id="jobs">
+    <div class="container">
+        <div class="section-title">
+            <h2>Jobs & Careers</h2>
+        </div>
+        <div class="jobs-content">
+            <div class="jobs-text">
+                <h3>Your Next Big Opportunity Starts Here</h3>
+                <p>We don't just help you find jobs — we help you build a meaningful career.
+                    Whether you're a fresher, mid-level professional, or seasoned expert, we connect you with verified
+                    openings that match your skills, goals, and potential.</p>
+                <p>Why Choose Jobs Through SASMATIX?</p>
+                <ul>
+                    <li><strong>Trusted Employer Network</strong> - We partner with top companies across IT, Finance,
+                        Retail, Manufacturing, and more.</li>
+                    <li><strong>Personalized Job Matching</strong> - Our recruiters guide you to roles that truly fit
+                        your profile and career path.</li>
+                    <li><strong>Real-Time Job Alerts</strong> - Stay updated with the latest openings in your domain via
+                        email or WhatsApp.</li>
+                    <li><strong>Career Support Services</strong> - Get resume polishing, interview preparation, and
+                        career counselling — all in one place.</li>
+                    <li><strong>Fresher to Leadership Roles</strong> - From entry-level to managerial and specialist
+                        positions — we've got it all.</li>
+                </ul>
+
+                <div class="process">
+                    <div class="process-step">
+                        <div class="step-icon">1</div>
+                        <div class="step-title">Submit Resume</div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">2</div>
+                        <div class="step-title">Get Matched</div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">3</div>
+                        <div class="step-title">Interview Prep</div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">4</div>
+                        <div class="step-title">Get Hired</div>
+                    </div>
+                </div>
+            </div>
+            <div class="jobs-image">
+                <img src="{% static 'asset/images/job.avif' %}" alt="Jobs & Careers">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Training Section -->
+<section class="training" id="training">
+    <div class="container">
+        <div class="section-title">
+            <h2>Skill Development (Training)</h2>
+        </div>
+        <div class="training-content">
+            <div class="training-text">
+                <h3>Learn. Practice. Get Hired.</h3>
+                <p>Our Skill Development programs are designed to bridge the gap between education
+                    and employment. We empower job seekers, students, and working professionals with industry-relevant
+                    skills, hands-on project experience, and career readiness.</p>
+                <p>What Makes Our Training Unique?</p>
+
+                <div class="training-features">
+                    <div class="training-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Job-Oriented Curriculum</span>
+                    </div>
+                    <div class="training-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Real-Time Project Practice</span>
+                    </div>
+                    <div class="training-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Beginner to Advanced Levels</span>
+                    </div>
+                    <div class="training-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Interview & Resume Prep</span>
+                    </div>
+                    <div class="training-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Certification Support</span>
+                    </div>
+                    <div class="training-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Outcome-Focused Learning</span>
+                    </div>
+                </div>
+
+                <p style="margin-top: 20px;">Gain skills. Build confidence. Start your career with SASMATIX's trusted
+                    training ecosystem.</p>
+                <a href="{% url 'course' %}" class="btn" style="margin-top: 20px;">Click Here for More Details</a>
+            </div>
+            <div class="training-image">
+                <img src="{% static 'asset/images/job2.avif' %}" alt="Skill Development">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3>Let's Build Something Great Together</h3>
+                <p>Whether you're a company looking to hire, a candidate searching for a job, or a professional wanting
+                    to upskill — we're here to help.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Your Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Your Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Phone Number</h4>
+                        <p>+91 12345 67890</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Email</h4>
+                        <p>info@sasmatix.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Office Address</h4>
+                        <p>123 Business Park, Tech City, India</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Working Hours</h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

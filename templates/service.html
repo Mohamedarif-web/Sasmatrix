@@ -1,0 +1,505 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+SASMATIX Solutions - Our Services
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/static/asset/images/cour.jpg'); background-size: cover;background-position: center;
+    color: var(--light);
+    text-align: center;
+    padding: 120px 0;
+    height: 750px;" id="home">
+    <div class="container">
+        <h1>Empowering Skills. Elevating Careers.</h1>
+        <p >We are passionate about transforming learning into a powerful tool for career growth.
+            Whether you're a student preparing to enter the workforce, a professional seeking to upskill, or an
+            organization looking to train your team — we have the perfect learning solutions for you.</p>
+        <div class="hero-buttons">
+            <a href="#courses" class="btn"> Online Courses</a>
+            <a href="#courses" class="btn"> Realtime Experts</a>
+            <a href="#courses" class="btn"> Placement Assistance</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>About Our Training Services</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>We are the leading provider of professional training programs designed to bridge the gap
+                    between academic knowledge and industry requirements. Our courses are developed by industry experts
+                    and delivered through a combination of theoretical learning and hands-on practice.</p>
+                <p>We are committed to empowering individuals with the skills needed to excel in today's competitive job
+                    market and helping organizations build a workforce that drives innovation and growth.</p>
+            </div>
+            <div class="about-image">
+                <img src="{% static 'asset/images/training.jpg' %}" alt="Training Services">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-choose">
+    <div class="container">
+        <div class="section-title">
+            <h2>Why Choose Our Training</h2>
+        </div>
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry professionals with years of real-world experience and deep subject matter
+                    expertise.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Hands-On Learning</h3>
+                <p>Gain practical experience through real projects, case studies, and interactive exercises that
+                    simulate actual work scenarios.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Industry-Recognized Certification</h3>
+                <p>Earn certificates that are valued by employers and enhance your professional credibility in the job
+                    market.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>Flexible Learning Options</h3>
+                <p>Choose from classroom training, online sessions, or self-paced courses that fit your schedule and
+                    learning preferences.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Placement Assistance</h3>
+                <p>Get support with resume building, interview preparation, and connections to our network of hiring
+                    partners.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Proven Track Record</h3>
+                <p>Join thousands of successful alumni who have advanced their careers after completing our training
+                    programs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Courses Section -->
+<section class="services" id="courses">
+    <div class="container">
+        <div class="section-title">
+            <h2>Courses Offered</h2>
+            <p>Comprehensive training programs designed to meet industry demands and accelerate your career growth</p>
+        </div>
+
+        <!-- First Row of Courses -->
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/image1.png' %}" alt="Java with Spring boot">
+                </div>
+                <div class="service-content">
+                    <h3>Java with Spring boot</h3>
+                    <p>This course covers Core Java fundamentals and advances into building enterprise-level
+                        applications using Spring Boot. You'll learn about RESTful APIs, Spring MVC, Spring Data JPA,
+                        and microservices architecture. Real-time project integration and deployment are included. Ideal
+                        for backend developers aiming to build scalable Java applications.</p>
+                    <ul>
+                        <li>Core Java concepts & OOP principles</li>
+                        <li>Spring Boot framework & architecture</li>
+                        <li>RESTful API development & testing</li>
+                        <li>Microservices architecture & design</li>
+                        <li>Real-time project integration</li>
+                        <li>Database connectivity & JPA</li>
+                    </ul>
+                    <div class="course-highlights">
+                        <span class="highlight-tag">Enterprise Level</span>
+                        <span class="highlight-tag">Backend Focus</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/j-s.webp' %}" alt="Selenium with Java">
+                </div>
+                <div class="service-content">
+                    <h3>Selenium with Java</h3>
+                    <p>Master automation testing using Selenium WebDriver with Java. This course includes TestNG, Maven,
+                        Page Object Model (POM), and reporting tools. Hands-on projects and real-time scenarios prepare
+                        you for QA roles. You'll also learn how to integrate Selenium with Jenkins and GitHub. Perfect
+                        for aspiring automation testers.</p>
+                    <ul>
+                        <li>Selenium WebDriver fundamentals</li>
+                        <li>TestNG framework & annotations</li>
+                        <li>Page Object Model (POM) design</li>
+                        <li>Maven project management</li>
+                        <li>CI/CD integration with Jenkins</li>
+                        <li>Real-world test automation scenarios</li>
+                    </ul>
+                    <div class="course-highlights">
+                        <span class="highlight-tag">QA Focused</span>
+                        <span class="highlight-tag">Automation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/image2.png' %}" alt="Python Training">
+                </div>
+                <div class="service-content">
+                    <h3>Python Training</h3>
+                    <p>Learn Python from basics to advance with practical use cases. This course includes data types,
+                        functions, OOPs, file handling, and more. Hands-on scripting, real-world mini-projects, and
+                        basic automation included. Perfect for beginners, students, and non-programmers transitioning
+                        into tech.</p>
+                    <ul>
+                        <li>Python fundamentals & syntax</li>
+                        <li>Data structures & algorithms</li>
+                        <li>Object-oriented programming concepts</li>
+                        <li>File handling & database operations</li>
+                        <li>Automation scripting & libraries</li>
+                        <li>Real-world mini-projects</li>
+                    </ul>
+                    <div class="course-highlights">
+                        <span class="highlight-tag">Beginner Friendly</span>
+                        <span class="highlight-tag">Versatile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row of Courses -->
+        <div class="services-grid" style="margin-top: 30px;">
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/f-s.png' %}" alt="Full Stack Development">
+                </div>
+                <div class="service-content">
+                    <h3>Full Stack Development</h3>
+                    <p>Become a full stack developer by mastering frontend (HTML, CSS, JavaScript, React) and backend
+                        (Node.js, Express, MongoDB). Learn how to build complete web applications from scratch. The
+                        course includes responsive UI design, API integration, and deployment. Best suited for those
+                        looking to work in both frontend and backend roles.</p>
+                    <ul>
+                        <li>Frontend technologies (HTML, CSS, JS, React)</li>
+                        <li>Backend development (Node.js, Express)</li>
+                        <li>Database management (MongoDB)</li>
+                        <li>API development & integration</li>
+                        <li>Responsive UI design principles</li>
+                        <li>Deployment strategies & hosting</li>
+                    </ul>
+                    <div class="course-highlights">
+                        <span class="highlight-tag">Complete Stack</span>
+                        <span class="highlight-tag">MERN Stack</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/web.jpg' %}" alt="Web Development">
+                </div>
+                <div class="service-content">
+                    <h3>Web Development</h3>
+                    <p>This course focuses on creating visually appealing and responsive websites. Learn HTML, CSS,
+                        JavaScript, Bootstrap, and basic React for frontend development. Real-world projects like
+                        landing pages, portfolios, and blogs included. Ideal for anyone starting a career in web design
+                        and development.</p>
+                    <ul>
+                        <li>HTML5 & CSS3 fundamentals</li>
+                        <li>JavaScript programming & DOM</li>
+                        <li>Responsive design with Bootstrap</li>
+                        <li>Introduction to React framework</li>
+                        <li>Portfolio & landing page projects</li>
+                        <li>Cross-browser compatibility</li>
+                    </ul>
+                    <div class="course-highlights">
+                        <span class="highlight-tag">Frontend Focus</span>
+                        <span class="highlight-tag">Creative</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/p-d.jpg' %}" alt="Python Full Stack Development">
+                </div>
+                <div class="service-content">
+                    <h3>Python Full Stack Development</h3>
+                    <p>This program covers frontend skills (HTML, CSS, JavaScript, React) and backend with Python,
+                        Django, and MySQL. You'll build full-fledged web apps with real-world functionality. The course
+                        includes REST API development, form validation, and deployment. Great for those looking to
+                        specialize in Python-based full stack projects.</p>
+                    <ul>
+                        <li>Frontend technologies & frameworks</li>
+                        <li>Python & Django backend development</li>
+                        <li>MySQL database integration</li>
+                        <li>REST API development & testing</li>
+                        <li>Form validation & user authentication</li>
+                        <li>Full application deployment</li>
+                    </ul>
+                    <div class="course-highlights">
+                        <span class="highlight-tag">Python Stack</span>
+                        <span class="highlight-tag">Django</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Row of Courses -->
+        <div class="services-grid" style="margin-top: 30px;">
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/aws.jpg' %}" alt="AWS - Linux Training">
+                </div>
+                <div class="service-content">
+                    <h3>AWS - Linux Training</h3>
+                    <p>Learn the essentials of Amazon Web Services (AWS) along with hands-on Linux administration.
+                        Topics include EC2, S3, IAM, CLI, server management, and cloud security. You'll gain practical
+                        skills in deploying applications in the cloud. Ideal for IT professionals, cloud beginners, and
+                        DevOps aspirants.</p>
+                    <ul>
+                        <li>AWS fundamentals & core services</li>
+                        <li>Linux system administration</li>
+                        <li>EC2, S3, IAM, VPC configurations</li>
+                        <li>AWS CLI & automation scripts</li>
+                        <li>Cloud security best practices</li>
+                        <li>Application deployment strategies</li>
+                    </ul>
+                    <div class="course-highlights">
+                        <span class="highlight-tag">Cloud Computing</span>
+                        <span class="highlight-tag">AWS Certified</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/image7.png' %}" alt="Oracle SQL & PLSQL">
+                </div>
+                <div class="service-content">
+                    <h3>Oracle SQL & PLSQL</h3>
+                    <p>Master writing optimized SQL queries and PL/SQL procedures for real-time applications. This
+                        course covers DDL, DML, Joins, Cursors, Triggers, and Exception Handling. Includes practical
+                        scenarios and exercises with Oracle DB tools. Essential for backend developers, data analysts,
+                        and database admins.</p>
+                    <ul>
+                        <li>SQL fundamentals & advanced queries</li>
+                        <li>Database design & normalization</li>
+                        <li>PL/SQL programming & procedures</li>
+                        <li>Triggers, cursors & exception handling</li>
+                        <li>Performance optimization techniques</li>
+                        <li>Real-world database scenarios</li>
+                    </ul>
+                    <div class="course-highlights">
+                        <span class="highlight-tag">Database Expert</span>
+                        <span class="highlight-tag">Oracle Certified</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/mob.jpg' %}" alt="Android Developer">
+                </div>
+                <div class="service-content">
+                    <h3>Android Developer</h3>
+                    <p>Build Android apps from scratch using Java/Kotlin and Android Studio. Learn about layouts,
+                        activities, intents, SQLite, Firebase, and API integration. Projects include calculator apps,
+                        login systems, and to-do lists. Best for mobile development enthusiasts and freelance app
+                        developers.</p>
+                    <ul>
+                        <li>Android development fundamentals</li>
+                        <li>Java/Kotlin programming for Android</li>
+                        <li>UI/UX design with Material Design</li>
+                        <li>SQLite & Firebase integration</li>
+                        <li>API integration & networking</li>
+                        <li>App publishing on Google Play Store</li>
+                    </ul>
+                    <div class="course-highlights">
+                        <span class="highlight-tag">Mobile Development</span>
+                        <span class="highlight-tag">Android Studio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Row of Courses -->
+        <div class="services-grid" style="margin-top: 30px;">
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/dev.jpg' %}" alt="Devops Training">
+                </div>
+                <div class="service-content">
+                    <h3>DevOps Training</h3>
+                    <p>Learn the tools and processes used in modern DevOps environments. Covers Git, Jenkins, Docker,
+                        Kubernetes, Ansible, and CI/CD pipelines. Real-time hands-on practice with cloud platforms and
+                        automation scripts. Ideal for developers, sysadmins, and anyone pursuing a DevOps career.</p>
+                    <ul>
+                        <li>Version control with Git & GitHub</li>
+                        <li>CI/CD pipelines with Jenkins</li>
+                        <li>Containerization with Docker</li>
+                        <li>Orchestration with Kubernetes</li>
+                        <li>Infrastructure as Code (Ansible)</li>
+                        <li>Monitoring & logging solutions</li>
+                    </ul>
+                    <div class="course-highlights">
+                        <span class="highlight-tag">DevOps Culture</span>
+                        <span class="highlight-tag">Automation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/ccc.png' %}" alt="CCNA">
+                </div>
+                <div class="service-content">
+                    <h3>CCNA</h3>
+                    <p>Gain in-depth knowledge of networking concepts, LAN/WAN, routing, and switching. This course
+                        prepares you for the official Cisco CCNA certification exam. Includes hands-on labs with
+                        routers, switches, and packet tracers. Perfect for those aiming to become network engineers or
+                        IT administrators.</p>
+                    <ul>
+                        <li>Network fundamentals & protocols</li>
+                        <li>Routing and switching technologies</li>
+                        <li>Network security implementations</li>
+                        <li>Wireless networking concepts</li>
+                        <li>Troubleshooting methodologies</li>
+                        <li>CCNA certification preparation</li>
+                    </ul>
+                    <div class="course-highlights">
+                        <span class="highlight-tag">Cisco Certified</span>
+                        <span class="highlight-tag">Networking</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="{% static 'asset/images/images11.webp' %}" alt="API Testing">
+                </div>
+                <div class="service-content">
+                    <h3>API Testing (Manual and Automation)</h3>
+                    <p>Learn how to test RESTful APIs manually using tools like Postman and automate them using Rest
+                        Assured with Java. This course covers HTTP methods, status codes, request/response validation,
+                        JSON/XML handling, and assertions. You'll also learn API authentication types (Bearer, OAuth2),
+                        test automation frameworks, and CI integration.</p>
+                    <ul>
+                        <li>API fundamentals & HTTP protocols</li>
+                        <li>Manual testing with Postman</li>
+                        <li>Automation with Rest Assured & Java</li>
+                        <li>Authentication methods (OAuth, JWT)</li>
+                        <li>Test reporting & documentation</li>
+                        <li>CI/CD integration for API testing</li>
+                    </ul>
+                    <div class="course-highlights">
+                        <span class="highlight-tag">API Testing</span>
+                        <span class="highlight-tag">Postman Expert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>Let's Build Something Great Together</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3>Course Enquiry</h3>
+                <p>Whether you're a student, professional, or organization looking for training solutions — we're here
+                    to help. Our team is friendly, responsive, and committed to guiding you every step of the way.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Select Course</label>
+                        <select id="course" class="form-control" required>
+                            <option value="">Select a Course</option>
+                            <option>Java with Spring boot</option>
+                            <option>Selenium with Java</option>
+                            <option>Python Training</option>
+                            <option>Full Stack Development</option>
+                            <option>Web Development</option>
+                            <option>Python Full Stack Development</option>
+                            <option>AWS - Linux Training</option>
+                            <option>Oracle SQL & PLSQL</option>
+                            <option>Android Developer</option>
+                            <option>DevOps Training</option>
+                            <option>CCNA</option>
+                            <option>API Testing (Manual and Automation)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control"
+                            placeholder="Tell us about your learning goals and any specific questions you have"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Get a Call</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Phone Number</h4>
+                        <p>+91 12345 67890</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Email</h4>
+                        <p>info@sasmatix.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Office Address</h4>
+                        <p>123 Business Park, Tech City, India</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Working Hours</h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
