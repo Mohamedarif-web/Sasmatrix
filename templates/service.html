@@ -124,9 +124,9 @@ SASMATIX Solutions - Our Services
                         <li>Database connectivity & JPA</li>
                     </ul>
                     <div class="course-highlights">
-                        <span class="highlight-tag">Enterprise Level</span>
-                        <span class="highlight-tag">Backend Focus</span>
+                        
                     </div>
+                    <button class="btn toggle-details-btn">More Details</button>
                 </div>
             </div>
             <div class="service-card">
@@ -148,9 +148,9 @@ SASMATIX Solutions - Our Services
                         <li>Real-world test automation scenarios</li>
                     </ul>
                     <div class="course-highlights">
-                        <span class="highlight-tag">QA Focused</span>
-                        <span class="highlight-tag">Automation</span>
+
                     </div>
+                    <button class="btn toggle-details-btn">More Details</button>
                 </div>
             </div>
             <div class="service-card">
@@ -172,9 +172,9 @@ SASMATIX Solutions - Our Services
                         <li>Real-world mini-projects</li>
                     </ul>
                     <div class="course-highlights">
-                        <span class="highlight-tag">Beginner Friendly</span>
-                        <span class="highlight-tag">Versatile</span>
+                        
                     </div>
+                    <button class="btn toggle-details-btn">More Details</button>
                 </div>
             </div>
         </div>
@@ -200,9 +200,9 @@ SASMATIX Solutions - Our Services
                         <li>Deployment strategies & hosting</li>
                     </ul>
                     <div class="course-highlights">
-                        <span class="highlight-tag">Complete Stack</span>
-                        <span class="highlight-tag">MERN Stack</span>
+                        
                     </div>
+                    <button class="btn toggle-details-btn">More Details</button>
                 </div>
             </div>
             <div class="service-card">
@@ -224,9 +224,9 @@ SASMATIX Solutions - Our Services
                         <li>Cross-browser compatibility</li>
                     </ul>
                     <div class="course-highlights">
-                        <span class="highlight-tag">Frontend Focus</span>
-                        <span class="highlight-tag">Creative</span>
+                        
                     </div>
+                    <button class="btn toggle-details-btn">More Details</button>
                 </div>
             </div>
             <div class="service-card">
@@ -248,9 +248,9 @@ SASMATIX Solutions - Our Services
                         <li>Full application deployment</li>
                     </ul>
                     <div class="course-highlights">
-                        <span class="highlight-tag">Python Stack</span>
-                        <span class="highlight-tag">Django</span>
+                       
                     </div>
+                    <button class="btn toggle-details-btn">More Details</button>
                 </div>
             </div>
         </div>
@@ -276,9 +276,9 @@ SASMATIX Solutions - Our Services
                         <li>Application deployment strategies</li>
                     </ul>
                     <div class="course-highlights">
-                        <span class="highlight-tag">Cloud Computing</span>
-                        <span class="highlight-tag">AWS Certified</span>
+              
                     </div>
+                    <button class="btn toggle-details-btn">More Details</button>
                 </div>
             </div>
             <div class="service-card">
@@ -300,9 +300,9 @@ SASMATIX Solutions - Our Services
                         <li>Real-world database scenarios</li>
                     </ul>
                     <div class="course-highlights">
-                        <span class="highlight-tag">Database Expert</span>
-                        <span class="highlight-tag">Oracle Certified</span>
+                        
                     </div>
+                    <button class="btn toggle-details-btn">More Details</button>
                 </div>
             </div>
             <div class="service-card">
@@ -324,9 +324,9 @@ SASMATIX Solutions - Our Services
                         <li>App publishing on Google Play Store</li>
                     </ul>
                     <div class="course-highlights">
-                        <span class="highlight-tag">Mobile Development</span>
-                        <span class="highlight-tag">Android Studio</span>
+                        
                     </div>
+                    <button class="btn toggle-details-btn">More Details</button>
                 </div>
             </div>
         </div>
@@ -351,9 +351,9 @@ SASMATIX Solutions - Our Services
                         <li>Monitoring & logging solutions</li>
                     </ul>
                     <div class="course-highlights">
-                        <span class="highlight-tag">DevOps Culture</span>
-                        <span class="highlight-tag">Automation</span>
+                       
                     </div>
+                    <button class="btn toggle-details-btn">More Details</button>
                 </div>
             </div>
             <div class="service-card">
@@ -375,9 +375,9 @@ SASMATIX Solutions - Our Services
                         <li>CCNA certification preparation</li>
                     </ul>
                     <div class="course-highlights">
-                        <span class="highlight-tag">Cisco Certified</span>
-                        <span class="highlight-tag">Networking</span>
+                      
                     </div>
+                    <button class="btn toggle-details-btn">More Details</button>
                 </div>
             </div>
             <div class="service-card">
@@ -399,9 +399,9 @@ SASMATIX Solutions - Our Services
                         <li>CI/CD integration for API testing</li>
                     </ul>
                     <div class="course-highlights">
-                        <span class="highlight-tag">API Testing</span>
-                        <span class="highlight-tag">Postman Expert</span>
+                       
                     </div>
+                    <button class="btn toggle-details-btn">More Details</button>
                 </div>
             </div>
         </div>
@@ -417,47 +417,34 @@ SASMATIX Solutions - Our Services
         </div>
         <div class="contact-container">
             <div class="contact-form">
-                <h3>Course Enquiry</h3>
-                <p>Whether you're a student, professional, or organization looking for training solutions — we're here
-                    to help. Our team is friendly, responsive, and committed to guiding you every step of the way.</p>
-                <form>
+                <!-- Display Django Messages -->
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+
+                <form method="post">
+                    {% csrf_token %}
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" class="form-control" placeholder="Your Phone Number" required>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Your Phone Number" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" placeholder="Your Email Address" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="course">Select Course</label>
-                        <select id="course" class="form-control" required>
-                            <option value="">Select a Course</option>
-                            <option>Java with Spring boot</option>
-                            <option>Selenium with Java</option>
-                            <option>Python Training</option>
-                            <option>Full Stack Development</option>
-                            <option>Web Development</option>
-                            <option>Python Full Stack Development</option>
-                            <option>AWS - Linux Training</option>
-                            <option>Oracle SQL & PLSQL</option>
-                            <option>Android Developer</option>
-                            <option>DevOps Training</option>
-                            <option>CCNA</option>
-                            <option>API Testing (Manual and Automation)</option>
-                        </select>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Your Email Address" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" class="form-control"
-                            placeholder="Tell us about your learning goals and any specific questions you have"
-                            required></textarea>
+                        <textarea id="message" name="message" class="form-control" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Get a Call</button>
+                    <button type="submit" class="btn">Submit</button>
                 </form>
             </div>
             <div class="contact-info">
@@ -467,7 +454,9 @@ SASMATIX Solutions - Our Services
                     </div>
                     <div class="contact-text">
                         <h4>Phone Number</h4>
-                        <p>+91 12345 67890</p>
+                        <p>+91 9600821155 </p>
+                        <p>+91 9600408830</p>
+                        <p>+91 9600101133</p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -476,7 +465,7 @@ SASMATIX Solutions - Our Services
                     </div>
                     <div class="contact-text">
                         <h4>Email</h4>
-                        <p>info@sasmatix.com</p>
+                        <p>sasmatixsolutions@gmail.com</p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -485,7 +474,10 @@ SASMATIX Solutions - Our Services
                     </div>
                     <div class="contact-text">
                         <h4>Office Address</h4>
-                        <p>123 Business Park, Tech City, India</p>
+                        <p>No 48/54, 1st Floor<br>
+                            Karikalan Street,<br> Adampakkam,
+                            Chennai-600088
+                        </p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -501,5 +493,42 @@ SASMATIX Solutions - Our Services
         </div>
     </div>
 </section>
+
+<!-- JavaScript for Toggle Functionality -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Select all the toggle buttons
+        const detailButtons = document.querySelectorAll('.toggle-details-btn');
+
+        detailButtons.forEach(button => {
+            // Find the <ul> element by looking for the previous sibling of the course-highlights div
+            const courseHighlights = button.previousElementSibling;
+            const detailsList = courseHighlights ? courseHighlights.previousElementSibling : null;
+
+            // Ensure we found a UL and hide it by default
+            if (detailsList && detailsList.tagName === 'UL') {
+                detailsList.style.display = 'none';
+            }
+
+            // Add a click listener to the button
+            button.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevents any default button behavior
+
+                // Find the details list relative to the clicked button
+                const highlights = this.previousElementSibling;
+                const listToToggle = highlights ? highlights.previousElementSibling : null;
+
+                if (listToToggle && listToToggle.tagName === 'UL') {
+                    // Check if the list is currently hidden
+                    const isHidden = listToToggle.style.display === 'none' || listToToggle.style.display === '';
+                    
+                    // Toggle the display and the button text
+                    listToToggle.style.display = isHidden ? 'block' : 'none';
+                    this.textContent = isHidden ? 'Show Less' : 'More Details';
+                }
+            });
+        });
+    });
+</script>
 
 {% endblock %}

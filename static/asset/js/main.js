@@ -120,15 +120,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Form submission
-    const contactForm = document.querySelector('form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
-            this.reset();
-        });
-    }
+    // Form submission handled by Django backend
+    // Removed JavaScript form interception to allow Django processing
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', function (e) {

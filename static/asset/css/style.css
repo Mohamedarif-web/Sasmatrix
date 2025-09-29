@@ -50,11 +50,35 @@ header {
     align-items: center;
 }
 
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.company-name {
     font-size: 28px;
     font-weight: bold;
     color: var(--light);
-    text-decoration: none;
+    letter-spacing: 1px;
 }
 
 .logo span {
@@ -565,6 +589,40 @@ nav ul li:hover .dropdown {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Django Messages Styling */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeaa7;
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
 /* Contact Section */
 .contact {
     background-color: #f8f8f8;
@@ -762,6 +820,15 @@ footer {
         position: relative;
     }
 
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .company-name {
+        font-size: 22px;
+    }
+
     .hamburger {
         display: block;
     }
@@ -898,6 +965,19 @@ footer {
         padding: 0 15px;
     }
 
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .company-name {
+        font-size: 18px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
     .hero h1 {
         font-size: 28px;
     }
@@ -915,3 +995,30 @@ footer {
         font-size: 24px;
     }
 }
+/* Alert Messages for Contact Forms */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: 500;
+    animation: slideIn 0.3s ease-in-out;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+

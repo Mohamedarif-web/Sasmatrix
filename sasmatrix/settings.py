@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-id_f@@)z&+8(jve4ihvazk!^o5+0563h$+(jak+^t73o-#+0l=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.sasmatrix.com', 'sasmatrix.com','*' ]
 
 
 # Application definition
@@ -99,7 +99,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+import os
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
@@ -115,6 +115,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 STATIC_URL = 'static/'
+# STATIC_ROOT=os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',  # Your static files folder

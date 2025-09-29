@@ -8,12 +8,25 @@
     <title>SASMATIX Solutions - Empowering Talent. Accelerating Business.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{% static 'asset/css/style.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'asset/images/sas_logo.png' %}">
+    <style>
+        /* Added styles for logo alignment */
+        .logo-container {
+            display: flex;
+            align-items: center; /* Vertically aligns the logo and text */
+            gap: 10px; /* Creates a small space between the logo and text */
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="container header-container">
-            <a href="/" class="logo">SASMATIX<span>.</span></a>
+            <!-- Wrapped logo and title in a new div for proper alignment -->
+            <div class="logo-container">
+                <a href="/" class="logo"><img src="{% static 'asset/images/sas_logo.png' %}" width="65" alt="SASMATIX Logo"></a>
+                <h2>SASMATIX</h2>
+            </div>
             <button class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </button>
@@ -30,7 +43,7 @@
                             <li><a href="{% url 'course' %}"> Online Courses</a></li>
                         </ul>
                     </li>
-                    <li><a href="{% url 'jobs' %}">Jobs & Careers</a></li>
+                    <li><a href="{% url 'jobs' %}">Interview Preparation</a></li>
                     <li><a href="{% url 'training' %}">Training</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
@@ -49,10 +62,8 @@
                     <p>We're here to break down the process, clarify your questions, and empower you with the insight
                         needed to move forward.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/sasmatix-solutions/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/sasmatix_solutions?igsh=cmp3aHMxenFxaGpw"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -60,9 +71,9 @@
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="{% url 'about' %}">About Us</a></li>
-                        <li><a href="{% url 'services' %}"></a>>Services</a></li>
-                        <li><a href="{% url 'jobs' %}"></a>>Jobs & Careers</a></li>
-                        <li><a href="{% url 'training' %}"></a>>Training</a></li>
+                        <li><a href="{% url 'services' %}">Services</a></li>
+                        <li><a href="{% url 'jobs' %}">Interview Preparation</a></li>
+                        <li><a href="{% url 'training' %}">Training</a></li>
                         <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
@@ -72,16 +83,19 @@
                         <li><a href="#services">Recruitment Process</a></li>
                         <li><a href="#services">Staffing</a></li>
                         <li><a href="#services">Corporate Training</a></li>
-                        <li><a href="#training">Skill Development</a></li>
+                        <li><a href="#training">Interview and Resume Preparation</a></li>
                         <li><a href="#contact">Career Counselling</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact Info</h3>
                     <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Park, Tech City, India</li>
-                        <li><i class="fas fa-phone-alt"></i> +91 12345 67890</li>
-                        <li><i class="fas fa-envelope"></i> info@sasmatix.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> No 48/54, 1st Floor<br>
+                            Karikalan Street,<br> Adampakkam,
+                            Chennai-600088</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 9600821155</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 9600408830</li>
+                        <li><i class="fas fa-envelope"></i> hr@sasmatix.com</li>
                     </ul>
                 </div>
             </div>
@@ -92,3 +106,4 @@
     </footer>
     <script src="{% static 'asset/js/main.js' %}"></script>
 </body>
+</html>
