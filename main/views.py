@@ -71,8 +71,7 @@ def jobs(request):
     return HttpResponseRedirect("/#jobs")
 
 def training(request):
-    return HttpResponseRedirect("/#training")
-
+    return render(request, 'service.html')
 def consulting(request):
     return HttpResponseRedirect("/#services")
 
